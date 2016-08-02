@@ -1,0 +1,30 @@
+{
+  "name": "antd-boilerplate",
+  "version": "1.0.0",
+  "description": "antd-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "dora --plugins proxy,atool-build,hmr,livereload?enableJs=false",
+    "build": "atool-build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^1.7.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "atool-build": "0.4.x",
+    "babel-plugin-antd": "^0.4.1", 
+    "dora": "0.2.x",
+    "dora-plugin-atool-build": "0.4.x",
+    "dora-plugin-hmr": "0.3.x",
+    "dora-plugin-livereload": "0.2.x",
+    "dora-plugin-proxy": "0.5.x",
+    "file-loader": "^0.9.0",
+    "glob": "^7.0.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0"
+  }
+}
