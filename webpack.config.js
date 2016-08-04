@@ -47,7 +47,7 @@ module.exports = function(webpackConfig) {
   );
 
   // Load src/entries/*.js as entry automatically.
-  const files = glob.sync('./src/entries/index.js');
+  const files = glob.sync('./src/entry/index.js');
   const newEntries = files.reduce(function(memo, file) {
     const name = path.basename(file, '.js');
     memo[name] = file;
