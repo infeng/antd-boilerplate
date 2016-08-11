@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 
 let render = () => {
-  const App = require('../containers/App');
+  const Routes = require('../routes').default;
   ReactDOM.render(
-    <App />,
+    <Routes />,
     document.getElementById('root')
   );
 };
@@ -24,7 +24,7 @@ if (module.hot) {
       renderException(error);
     }
   };
-  module.hot.accept('../containers/App', () => {
+  module.hot.accept('../routes', () => {
     render();
   });
 }

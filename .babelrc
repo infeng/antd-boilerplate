@@ -1,3 +1,4 @@
 {
-  "plugins": [["antd", { "style": "css" }]]
+  "plugins": [["antd", { "style": "css" }], "transform-runtime"],
+  "presets": ["es2015", "stage-0", "react"]
 }

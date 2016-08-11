@@ -4,8 +4,8 @@
   "description": "antd-boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "dora --plugins \"proxy,webpack,webpack-hmr,livereload?enableJs=false,browser-history?index=/src/entries/index.html\"",
-    "build": "atool-build"
+    "start": "node server.js",
+    "build": "webpack --config webpack.config.pro.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,20 +13,26 @@
     "antd": "^1.7.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
     "redbox-react": "^1.2.10"
   },
   "devDependencies": {
-    "atool-build": "0.4.x",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
     "babel-plugin-antd": "^0.4.1",
-    "dora": "0.2.x",
-    "dora-plugin-browser-history": "^0.1.3",
-    "dora-plugin-livereload": "0.2.x",
-    "dora-plugin-proxy": "0.5.x",
-    "dora-plugin-webpack": "^0.8.0",
-    "dora-plugin-webpack-hmr": "^0.1.1",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
     "file-loader": "^0.9.0",
     "glob": "^7.0.5",
     "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.22.0"
+    "html-webpack-plugin": "^2.22.0",
+    "redbox-react": "^1.3.0",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
